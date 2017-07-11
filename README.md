@@ -122,3 +122,8 @@ For each item, you need to provide at least one of the filters
 Occasionally, syntax manager may fail to apply settings automatically,
 especially when creating new file. Reloading syntax manger will be helpful in
 this situation. To reload settings, launch comment palette (`C+shift+p`) and type "Syntax Manager: Reload Settings".
+
+
+## License
+See the `LICENSE.txt` file under this repository.
+
