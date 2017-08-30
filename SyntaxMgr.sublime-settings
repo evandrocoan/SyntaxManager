@@ -1,47 +1,6 @@
-# Syntax Manager for Sublime Text 2/3
-
-It helps in applying settings to given syntaxes and extensions.
-
-I don't understand why Sublime Text makes it so difficult to apply the same setting across several different syntaxes.
-For example, if someone want to enable `auto_match_enabled` for `python` and `c`, they has to create two files:
-- `Packages/User/Python.sublime-settings`
-- `Packages/User/C.sublime-settings`
-
-Then, in each of the files, add:
-
-        "auto_match_enabled": true
-
-
-This plugin makes it easier by considering following setting in Syntax Manger:
-
-
-        "syntaxmgr_settings": [
-            {
-                "scopes": ["source.c", "source.python"],
-                "settings": {
-                    "auto_match_enabled" : true
-                }
-            }
-        ]
-
-## Installation
-
-Package Control!
-
-## Usage
-
-Open `Preference` -> `Syntax Manager`. Below is a sample of what you can specify in the settings file.
-For each item, you need to provide at least one of the filters
-
-- `scopes` 
-- `scopes_excluded` 
-- `extensions`
-- `platforms`
-- `hostnames`
-- `first_line_match`
-
-```js
 {
+    // visit https://github.com/randy3k/SyntaxManager for another example
+    //
     "syntaxmgr_settings": [
         {
             // platforms, can be osx, windows or linux
@@ -71,7 +30,7 @@ For each item, you need to provide at least one of the filters
             "settings": {
                 "font_size" : 12
             }
-        }
+        },
         {
             // apply this setting when first line matches
             "first_line_match": ["#!/.*?/sh"],
@@ -122,15 +81,3 @@ For each item, you need to provide at least one of the filters
         }
     ]
 }
-```
-
-### Reload Settings
-
-Occasionally, syntax manager may fail to apply settings automatically,
-especially when creating new file. Reloading syntax manger will be helpful in
-this situation. To reload settings, launch comment palette (`C+shift+p`) and type "Syntax Manager: Reload Settings".
-
-
-## License
-See the `LICENSE.txt` file under this repository.
-
