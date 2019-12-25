@@ -73,6 +73,7 @@ This plugin makes it easier by considering following setting in Syntax Manger:
 search for **`SyntaxManager`** and press <kbd>Enter</kbd>
 
 See also:
+
 1. [ITE - Integrated Toolset Environment](https://github.com/evandrocoan/ITE)
 1. [Package control docs](https://packagecontrol.io/docs/usage) for details.
 
